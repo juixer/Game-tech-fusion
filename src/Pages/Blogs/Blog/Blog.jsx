@@ -2,10 +2,9 @@ const Blog = ({ blog }) => {
   const {title, author, date, image_url, excerpt} = blog;
   return (
     <div>
-      <div className="flex rounded-xl flex-col items-center lg:flex-row bg-base-100 shadow-xl">
+      <div className="flex rounded-xl flex-col items-center lg:flex-row bg-base-100 shadow-xl border border-black">
         <div>
           <img
-          className="rounded-t-xl lg:rounded-l-xl lg:rounded-r-none "
             src={image_url}
             alt={title}
           />

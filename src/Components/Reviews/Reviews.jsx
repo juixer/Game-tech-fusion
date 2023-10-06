@@ -14,8 +14,8 @@ const Reviews = () => {
     setShowMore(!showMore);
   };
   return (
-    <div className="my-28">
-      <h1 className="text-center mt-10 mb-10 text-3xl">Read What Our Customers Say</h1>
+    <div className="my-28 mx-5">
+      <h1 className="text-center font-bold mt-10 mb-10 text-3xl">Read What Our Customers Say</h1>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
         {showMore ? (
           <>

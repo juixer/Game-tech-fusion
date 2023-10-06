@@ -1,7 +1,7 @@
 const Faq = () => {
   return (
-    <>
-        <h1 className="text-center mb-5 text-3xl">Frequently Asked Questions</h1>
+    <div className="mx-5">
+        <h1 className="text-center font-bold mb-5 text-3xl">Frequently Asked Questions</h1>
       <div className="my-10 max-w-4xl mx-auto flex flex-col gap-5">
         <div>
           <div className="collapse bg-base-200">
@@ -118,7 +118,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Blogs from "../Pages/Blogs/Blogs";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
         {
           path:'/blog',
           element:<Blogs/>
+        },
+        {
+          path:'/service/:id',
+          element:<ServiceDetails/>,
+          loader: () => fetch('../Services.json')
         }
       ]
     },
