@@ -3,7 +3,7 @@ import Teams from "./Team/Teams";
 
 const AboutUs = () => {
   return (
-    <div className="hero lg:py-10 lg:my-16">
+    <div className="hero lg:py-10 lg:my-5">
         <Helmet>
             <title>About Us</title>
         </Helmet>
