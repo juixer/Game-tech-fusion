@@ -5,10 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    backgroundImage: {
-      'banner1': "url('./src/assets/Image/Banner1.png')",
-      'footer-texture': "url('/img/footer-texture.png')",
-    }
+    extend: {
+      
+    },
   },
   plugins: [require("daisyui")],
 }
