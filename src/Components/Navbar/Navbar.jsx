@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navlinks = (
@@ -6,7 +6,7 @@ const Navbar = () => {
       <li>
         <NavLink to={"/"}>Home</NavLink>
       </li>
-      
+
       <li>
         <NavLink to={"/blog"}>Blog</NavLink>
       </li>
@@ -46,13 +46,17 @@ const Navbar = () => {
             {navlinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-sm md:text-2xl ">GameTechFusion</a>
+        <a className="btn btn-ghost normal-case text-sm md:text-2xl ">
+          GameTechFusion
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal text-xl px-1 space-x-4">{navlinks}</ul>
+        <ul className="menu menu-horizontal text-xl px-1 space-x-4">
+          {navlinks}
+        </ul>
       </div>
       <div className="navbar-end">
-        <div className="dropdown dropdown-end">
+        {/* <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
               <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -69,7 +73,12 @@ const Navbar = () => {
               <a>Logout</a>
             </li>
           </ul>
-        </div>
+        </div> */}
+        <Link to={"/login"}>
+          <button className="btn bg-black text-white hover:text-black">
+            Login
+          </button>
+        </Link>
       </div>
     </div>
   );

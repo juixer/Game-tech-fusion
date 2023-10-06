@@ -1,7 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { FaPhone, FaFileLines, FaMessage} from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+    const handleStartNow = () => {
+        toast('Thank you for contacting with us, our team will reach you shortly.');
+    }
   return (
     <div className="py-10 mx-3">
       <Helmet>
@@ -15,17 +19,17 @@ const Contact = () => {
             <p className="mb-2">(Monday to Saturday, 9am to 4pm PST)</p>
             <p>International: 0-999-324-234</p>
         </div>
-        <div className="flex max-w-xl mx-auto items-center flex-col">
+        <div className="flex max-w-xl text-center mx-auto items-center flex-col">
             <p className="text-8xl mb-5"><FaFileLines/></p>
             <h1 className="text-3xl font-bold mb-2">Start A New Case</h1>
             <p className="mb-5">Just send us your questions or concerns by starting a new case and we will give you the help you need</p>
-            <button className="btn bg-black text-white hover:text-black">Start Here</button>
+            <button onClick={handleStartNow} className="btn bg-black text-white hover:text-black">Start Here</button>
         </div>
         <div className="flex max-w-5xl items-center flex-col">
             <p className="text-8xl mb-5"><FaMessage/></p>
             <h1 className="text-3xl font-bold mb-2">Live Chat</h1>
             <p className="mb-5">Chat with a member of our in-house team</p>
-            <button className="btn bg-black text-white hover:text-black">Start Here</button>
+            <button onClick={handleStartNow} className="btn bg-black text-white hover:text-black">Start Here</button>
 
         </div>
       </div>
