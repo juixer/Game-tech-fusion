@@ -6,7 +6,8 @@ import { toast } from "react-toastify";
 
 const LogIn = () => {
     // use auth fuctions
-    const {googleLogin} = useAuth()
+    const {googleLogin, githubLogin} = useAuth()
+    
     // handle google login
     const handleGoogleLogin = () => {
         googleLogin()
@@ -17,6 +18,18 @@ const LogIn = () => {
             toast.error(err.message)
         })
     }
+    // handle github login
+    const handleGithubLogin = () => {
+        githubLogin()
+        .then(() => {
+            toast.success('login successful')
+        })
+        .catch((err) => {
+            toast.error(err.message)
+        })
+    }
+
+    
   return (
     <div className="py-10 lg:py-20">
       <Helmet>
@@ -57,7 +70,7 @@ const LogIn = () => {
             <hr className="mx-20" />
             <div className="flex justify-center gap-10">
                 <button onClick={handleGoogleLogin} className="my-5 text-4xl btn text-white bg-black hover:text-black"><FaGoogle/></button>
-                <button className="my-5 text-4xl btn text-white bg-black hover:text-black"><FaGithub/></button>
+                <button onClick={handleGithubLogin} className="my-5 text-4xl btn text-white bg-black hover:text-black"><FaGithub/></button>
             </div>
             <hr className="mx-20" />
             <h1 className="text-center mt-3">Do not have an Account? <Link to={'/register'}><span className="text-indigo-600 font-bold">Register</span></Link></h1>
