@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -7,10 +8,13 @@ const ServiceDetails = () => {
   const idInt = parseInt(id);
   const filterService = services.find((service) => service.id === idInt);
   const handleBookNow = () => {
-    toast("Thank You For Choosing US")
-  }
+    toast("Thank You For Choosing US");
+  };
   return (
     <div>
+      <Helmet>
+        <title>{filterService.service_name}</title>
+      </Helmet>
       <div
         className="hero min-h-screen lg:rounded-xl lg:my-16"
         style={{
@@ -25,11 +29,19 @@ const ServiceDetails = () => {
                 <h1 className="mb-5 text-5xl font-bold">
                   {filterService.service_name}
                 </h1>
-                <p className="text-xl ">Price: <span className="text-rose-400">{filterService.price}</span></p>
+                <p className="text-xl ">
+                  Price:{" "}
+                  <span className="text-rose-400">{filterService.price}</span>
+                </p>
               </div>
               <div>
                 <p className="mb-5">{filterService.big_description}</p>
-                <button onClick={handleBookNow} className="btn bg-black text-white hover:text-black border-none">Book now</button>
+                <button
+                  onClick={handleBookNow}
+                  className="btn bg-black text-white hover:text-black border-none"
+                >
+                  Book now
+                </button>
               </div>
             </div>
           </div>

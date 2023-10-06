@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import Teams from "./Team/Teams";
 
 const AboutUs = () => {
   return (
     <div className="hero lg:py-10 lg:my-16">
+        <Helmet>
+            <title>About Us</title>
+        </Helmet>
       <div className="hero-content text-center">
         <div className="max-w-5xl">
           <h1 className="text-5xl font-bold">About us</h1>
