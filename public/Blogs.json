@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "The Future of Gaming: Trends to Watch",
+      "author": "John Doe",
+      "date": "2023-10-01",
+      "image_url": "https://i.ibb.co/xjSRrqJ/Hobbies-Hobbies-Fill.png",
+      "excerpt": "Explore the latest trends in the gaming industry, including the rise of cloud gaming, augmented reality, and esports."
+    },
+    {
+      "id": 2,
+      "title": "Tech Conferences: Networking Tips and Strategies",
+      "author": "Jane Smith",
+      "date": "2023-09-20",
+      "image_url": "https://i.ibb.co/DL2RZ8R/Tech-Life-Communication.png",
+      "excerpt": "Get the most out of your tech conference experience with these valuable networking tips and strategies."
+    },
+    {
+      "id": 3,
+      "title": "Mastering Your Coding Skills: Best Practices",
+      "author": "David Brown",
+      "date": "2023-09-05",
+      "image_url": "https://i.ibb.co/SxqtJwt/Tech-Life-Remote-Life.png",
+      "excerpt": "Discover the best practices and resources for improving your coding skills and staying competitive in the tech industry."
+    },
+    {
+      "id": 4,
+      "title": "The Wellness-Tech Connection: Health and Gadgets",
+      "author": "Emily Johnson",
+      "date": "2023-08-15",
+      "image_url": "https://i.ibb.co/qj1ZZdK/Lifesavers-Online.png",
+      "excerpt": "Explore the growing relationship between wellness and technology, and how gadgets are influencing our well-being."
+    },
+    {
+      "id": 5,
+      "title": "Event Planning 101: Tips for Successful Tech Conferences",
+      "author": "Michael White",
+      "date": "2023-07-25",
+      "image_url": "https://i.ibb.co/SxqtJwt/Tech-Life-Remote-Life.png",
+      "excerpt": "Learn the essential tips and strategies for planning and executing successful tech conferences that leave a lasting impact."
+    }
+  ]
+  
