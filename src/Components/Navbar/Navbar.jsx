@@ -46,7 +46,7 @@ const Navbar = () => {
             {navlinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-2xl">GameTechFusion</a>
+        <a className="btn btn-ghost normal-case text-sm md:text-2xl ">GameTechFusion</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal text-xl px-1 space-x-4">{navlinks}</ul>

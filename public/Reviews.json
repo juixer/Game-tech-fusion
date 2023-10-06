@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "user_name": "Alice Johnson",
+      "rating": 5,
+      "date": "2023-09-15",
+      "title": "Fantastic Resource!",
+      "review_text": "I've been using this website to find tech conferences, and it's been a fantastic resource. The events are well-organized, and the registration process is straightforward. Highly recommended!"
+    },
+    {
+      "id": 2,
+      "user_name": "Bob Smith",
+      "rating": 4,
+      "date": "2023-08-28",
+      "title": "Great Gaming Convention Listings",
+      "review_text": "I love attending gaming conventions, and this website has been my go-to for finding the latest events. The listings are comprehensive, and I appreciate the detailed event descriptions."
+    },
+    {
+      "id": 3,
+      "user_name": "Eva Martinez",
+      "rating": 5,
+      "date": "2023-08-10",
+      "title": "Hackathon Enthusiast's Dream",
+      "review_text": "As a coding enthusiast, I'm always on the lookout for hackathons, and this website has made it so easy to discover and register for them. The variety of hackathons available is impressive!"
+    },
+    {
+      "id": 4,
+      "user_name": "David Brown",
+      "rating": 4,
+      "date": "2023-07-22",
+      "title": "Helpful Event Marketing Packages",
+      "review_text": "I used the event marketing services for my tech meetup, and it made a big difference. The marketing packages were customizable, and the team provided excellent support."
+    },
+    {
+      "id": 5,
+      "user_name": "Sophia Clark",
+      "rating": 5,
+      "date": "2023-06-15",
+      "title": "Outstanding Event Consulting",
+      "review_text": "The event consulting services were a game-changer for our company's conference. From planning to execution, the team's expertise was outstanding."
+    },
+    {
+      "id": 6,
+      "user_name": "Michael White",
+      "rating": 4,
+      "date": "2023-05-02",
+      "title": "Successful Sponsorship",
+      "review_text": "We decided to sponsor a gaming convention through this website,it was a successful venture. The exposure we gained was impressive, The sponsorship process was smooth."
+    }
+  ]
+  
