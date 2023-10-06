@@ -1,15 +1,23 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/footer";
+import { InfinitySpin } from "react-loader-spinner";
 
 const Root = () => {
+  const navigation = useNavigation();
   return (
     <>
       <div className="max-w-screen-2xl mx-auto">
         <Navbar />
-        <Outlet />
+        {navigation.state === "loading" ? (
+          <div className="py-44">
+            <InfinitySpin width="200" color="#4fa94d" />
+          </div>
+        ) : (
+          <Outlet />
+        )}
       </div>
       <Footer />
       <ToastContainer

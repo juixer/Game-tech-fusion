@@ -8,14 +8,17 @@ const githubProvider = new GithubAuthProvider();
 
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
+    const [loading, setLoading]= useState(true)
 
     // google LogIn
     const googleLogin = () => {
+        setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
 
     // github login
     const githubLogin = () => {
+        setLoading(true)
         return signInWithPopup(auth, githubProvider)
     }
 
@@ -25,6 +28,7 @@ const AuthProvider = ({children}) => {
     }
     // update user
     const updateUser = (name, photo) => {
+        setLoading(true)
         return updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photo,
@@ -32,12 +36,14 @@ const AuthProvider = ({children}) => {
     }
     // SignOut
     const userSignOut = () => {
+        setLoading(true)
         return signOut(auth)
     }
     // Current USer
     useEffect(()=>{
         const unSubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user)
+            setLoading(false)
             return() =>{
                 unSubscribe();
             }
