@@ -167,7 +167,7 @@ const Register = () => {
           <hr className="mx-16" />
           <h1 className="text-center mt-3">
             Already have an Account?{" "}
-            <Link to={"/register"}>
+            <Link to={"/login"}>
               <span className="text-indigo-600 font-bold">Log In</span>
             </Link>
           </h1>

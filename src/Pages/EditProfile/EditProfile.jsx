@@ -18,7 +18,7 @@ const EditProfile = () => {
         .then(err => toast.error(err.message))
     }
   return (
-    <div className="py-16"
+    <div className="py-16 mx-5"
     data-aos="fade-right"
     data-aos-offset="300"
     data-aos-easing="ease-in-sine"

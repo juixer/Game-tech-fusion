@@ -11,7 +11,8 @@ const ServiceDetails = () => {
     toast("Thank You For Choosing US");
   };
   return (
-    <div className="lg:py-24"
+    <div
+      className="lg:py-24"
       data-aos="flip-left"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
@@ -31,11 +32,11 @@ const ServiceDetails = () => {
           <div className="lg:max-w-5xl">
             <div className="flex flex-col md:flex-row justify-between gap-5">
               <div>
-                <h1 className="mb-5 text-5xl font-bold">
+                <h1 className="mb-5 text-3xl  md:text-5xl font-bold">
                   {filterService.service_name}
                 </h1>
                 <p className="text-xl ">
-                  Price:{" "}
+                  Price:
                   <span className="text-rose-400">{filterService.price}</span>
                 </p>
               </div>
