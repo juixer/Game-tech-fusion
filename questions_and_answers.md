@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A
+#### Answer: B
 
-<i>empty greeting variable created and an empty object assigned in greetign, so greetign is empty object thats why my answer is A</i>
+<i>declared the variable as greeting but assigned an empty object to greetign. js not gonna recognize greetign and it will throw `ReferenceError: greetign is not defined` ERROR</i>
 
 </p>
 </details>
@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: C
 
-<i>in here a parameter receive number and b parameter receive string so in the end its gonna concat 2 values and result is "12"</i>
+<i>in here a parameter receive number and b parameter receive string so js will try to concat 2 values as string because one of them is string and result is "12"</i>
 
 </p>
 </details>
@@ -71,7 +71,7 @@ console.log(food);
 
 #### Answer: A
 
-<i>in here food array decleared which contains some foods, then a info variable created which contains an object then change object value, then console log food array. in the end changing object wont effect on array thats why my answer is A</i>
+<i>in here food array declared which contains some foods, then a info variable created which contains an object with a property favoriteFood that refers first element of food. then change object value, then console log food array. in the end changing object wont effect on array thats why my answer is A</i>
 
 </p>
 </details>
