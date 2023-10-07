@@ -1,7 +1,15 @@
 const Faq = () => {
   return (
-    <div className="mx-5">
-        <h1 className="text-center font-bold mb-5 text-3xl">Frequently Asked Questions</h1>
+    <div
+      className="mx-5"
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+    >
+      <h1 className="text-center font-bold mb-5 text-3xl">
+        Frequently Asked Questions
+      </h1>
       <div className="my-10 max-w-4xl mx-auto flex flex-col gap-5">
         <div>
           <div className="collapse bg-base-200">

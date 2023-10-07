@@ -1,7 +1,13 @@
 import "./Banner.css";
 const Banner = () => {
   return (
-    <div className="mx-5 my-10">
+    <div
+      className="mx-5 my-10"
+      data-aos="flip-up"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="800"
+    >
       <h1 className="text-center font-bold mb-5 text-3xl">Our Best Events</h1>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
@@ -69,7 +75,9 @@ const Banner = () => {
             <div className="p-4 bg-black rounded-b-xl bg-opacity-40 absolute w-full bottom-0">
               <h1 className="text-3xl mb-3 text-white">WellnessTech Summit</h1>
               <p className="text-white">
-              Explore the intersection of technology and wellness with inspiring keynotes, workshops, and the latest health tech innovations.
+                Explore the intersection of technology and wellness with
+                inspiring keynotes, workshops, and the latest health tech
+                innovations.
               </p>
             </div>
           </div>

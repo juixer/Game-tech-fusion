@@ -4,15 +4,15 @@ import { toast } from "react-toastify";
 
 const Navbar = () => {
   // use context
-  const { user,userSignOut } = useAuth();
+  const { user, userSignOut } = useAuth();
   // user LogOut
   const handleLogOut = () => {
     userSignOut()
-    .then(()=> {
-      toast.success('Logged out successfully')
-    })
-    .catch(err => toast.error(err.message));
-  }
+      .then(() => {
+        toast.success("Logged out successfully");
+      })
+      .catch((err) => toast.error(err.message));
+  };
   const navlinks = (
     <>
       <li>
@@ -32,7 +32,13 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div
+      className="navbar bg-base-100"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="800"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -80,7 +86,9 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to={'/editProfile'}><p>Edit Profile</p></Link>
+                <Link to={"/editProfile"}>
+                  <p>Edit Profile</p>
+                </Link>
               </li>
               <li>
                 <a onClick={handleLogOut}>Logout</a>

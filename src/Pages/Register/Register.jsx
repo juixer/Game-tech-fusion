@@ -48,7 +48,13 @@ const Register = () => {
       });
   };
   return (
-    <div className="py-10">
+    <div
+      className="py-10"
+      data-aos="fade-up-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+    >
       <Helmet>
         <title>Register</title>
       </Helmet>

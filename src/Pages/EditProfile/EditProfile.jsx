@@ -18,7 +18,11 @@ const EditProfile = () => {
         .then(err => toast.error(err.message))
     }
   return (
-    <div className="py-16">
+    <div className="py-16"
+    data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="600">
         <div className="flex gap-10 justify-center flex-col items-center">
             <h1 className="text-5xl">Name: <span className="font-bold">{user?.displayName}</span></h1>
             <img className="w-80 rounded-xl" src={user?.photoURL}></img>

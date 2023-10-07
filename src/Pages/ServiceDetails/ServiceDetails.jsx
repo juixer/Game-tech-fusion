@@ -11,7 +11,12 @@ const ServiceDetails = () => {
     toast("Thank You For Choosing US");
   };
   return (
-    <div>
+    <div
+      data-aos="flip-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+    >
       <Helmet>
         <title>{filterService.service_name}</title>
       </Helmet>

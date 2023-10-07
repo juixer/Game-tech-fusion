@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from "../FireBase/FireBase";
 export const AuthContext = createContext(null)
 // third party providers
@@ -34,6 +34,10 @@ const AuthProvider = ({children}) => {
             photoURL: photo,
         })
     }
+    // user login
+    const userLogIn = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password)
+    }
     // SignOut
     const userSignOut = () => {
         setLoading(true)
@@ -52,6 +56,7 @@ const AuthProvider = ({children}) => {
     const authInfo = {
         googleLogin,
         githubLogin,
+        userLogIn,
         createUser,
         updateUser,
         userSignOut,

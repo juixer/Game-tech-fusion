@@ -12,8 +12,8 @@ const Root = () => {
       <div className="max-w-screen-2xl mx-auto">
         <Navbar />
         {navigation.state === "loading" ? (
-          <div className="py-44">
-            <InfinitySpin width="200" color="#4fa94d" />
+          <div className="flex justify-center py-64">
+            <InfinitySpin width="200" color="#000000" />
           </div>
         ) : (
           <Outlet />
