@@ -49,7 +49,7 @@ const Register = () => {
   };
   return (
     <div
-      className="py-10"
+      className="py-5"
       data-aos="fade-up-right"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
@@ -107,6 +107,11 @@ const Register = () => {
             className="input input-bordered"
             required
           />
+          <ul className="text-red-500 list-disc ml-8 my-3">
+            <li>Password should be at least 6 characters</li>
+            <li>Contains at least one capital letter</li>
+            <li>Contains at least one special character</li>
+          </ul>
         </div>
         <div className="form-control">
           <label className="label">

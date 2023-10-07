@@ -26,9 +26,7 @@ const Review = ({ review }) => {
             </div>
             <p className="mb-3 text-indigo-500">{title}</p>
             <p>
-              {review_text.length > 150
-                ? `${review_text.slice(0, 159)}...`
-                : review_text}
+              {review_text}
             </p>
           </div>
         </div>

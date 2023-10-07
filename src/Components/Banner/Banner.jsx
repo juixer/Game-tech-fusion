@@ -2,7 +2,7 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div
-      className="mx-5 my-10"
+      className="mx-1 my-10"
       data-aos="flip-up"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
