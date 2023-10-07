@@ -21,7 +21,7 @@ const ServiceDetails = () => {
         <title>{filterService.service_name}</title>
       </Helmet>
       <div
-        className="hero min-h-screen lg:rounded-xl lg:my-16"
+        className="hero min-h-screen lg:rounded-xl my-5"
         style={{
           backgroundImage: ` url(${filterService.image_url})`,
         }}
