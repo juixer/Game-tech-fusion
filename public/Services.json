@@ -2,7 +2,7 @@
     {
       "service_name": "Tech Conference Passes",
       "id": 1,
-      "image_url": "https://i.ibb.co/NFthNGK/tech-confernce.png",
+      "image_url": "https://i.ibb.co/qRtnnGH/tech-confernce.jpg",
       "price": "Starting at $199",
       "short_description": "Access top-tier tech conferences, workshops, and networking.",
       "big_description": "Gain access to top-tier tech conferences where you can connect with industry leaders, attend workshops, and expand your professional network. Our conference passes offer you the opportunity to stay ahead in the fast-paced world of technology."
@@ -10,7 +10,7 @@
     {
       "service_name": "Gaming Convention Tickets",
       "id": 2,
-      "image_url": "https://i.ibb.co/s2TKw5k/gaming-convention.png",
+      "image_url": "https://i.ibb.co/YPtck37/gaming-convention.jpg",
       "price": "From $49",
       "short_description": "Experience thrilling gaming expos, tournaments, and cosplay events.",
       "big_description": "Get your tickets to the most thrilling gaming conventions in the industry. Our tickets grant you entry to gaming expos, tournaments, cosplay events, and exclusive behind-the-scenes experiences. Join fellow gamers and immerse yourself in the world of gaming."
@@ -18,7 +18,7 @@
     {
       "service_name": "Hackathon Registration",
       "id": 3,
-      "image_url": "https://i.ibb.co/BgpHgxq/hackathon.png",
+      "image_url": "https://i.ibb.co/R9WrLqg/hackathon.jpg",
       "price": "$25 per participant",
       "short_description": "Participate in intense hackathon challenges and win exciting prizes.",
       "big_description": "Participate in intense hackathon challenges that showcase your coding skills and creativity. Our hackathon registration provides you with an opportunity to collaborate with like-minded tech enthusiasts, solve real-world problems, and compete for exciting prizes."
@@ -26,7 +26,7 @@
     {
       "service_name": "Event Marketing Packages",
       "id": 4,
-      "image_url": "https://i.ibb.co/cyk0KDL/marketing.png",
+      "image_url": "https://i.ibb.co/QKQX4CS/marketing.jpg",
       "price": "Customized pricing",
       "short_description": "Elevate your event's visibility with tailored marketing solutions.",
       "big_description": "Elevate your event's visibility with our tailored event marketing packages. We offer comprehensive solutions that include social media promotion, email campaigns, content creation, and targeted advertising. Maximize your reach and engagement with our expertise."
@@ -34,7 +34,7 @@
     {
       "service_name": "Event Consulting Services",
       "id": 5,
-      "image_url": "https://i.ibb.co/WzSTjnD/consulting.png",
+      "image_url": "https://i.ibb.co/nbbc09n/consulting.jpg",
       "price": "Starting at $500",
       "short_description": "Expert guidance through every stage of event management.",
       "big_description": "Take the stress out of event planning with our event consulting services. Our experienced team will guide you through every stage of event management, from conceptualization and logistics to marketing and budgeting. Achieve your event goals with our professional support."

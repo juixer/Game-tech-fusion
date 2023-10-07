@@ -1,20 +1,20 @@
 #banner1{
-    background-image: url('../../assets//Image/Banner1.png');
+    background-image: url('../../assets//Image/Banner1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #banner2{
-    background-image: url('../../assets//Image/Banner2.png');
+    background-image: url('../../assets//Image/Banner2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #banner3{
-    background-image: url('../../assets//Image/Banner3.png');
+    background-image: url('../../assets//Image/Banner3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #banner4{
-    background-image: url('../../assets//Image/Banner4.png');
+    background-image: url('../../assets//Image/Banner4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

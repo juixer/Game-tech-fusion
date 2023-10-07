@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     toast("Thank You For Choosing US");
   };
   return (
-    <div
+    <div className="lg:py-24"
       data-aos="flip-left"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
@@ -21,12 +21,12 @@ const ServiceDetails = () => {
         <title>{filterService.service_name}</title>
       </Helmet>
       <div
-        className="hero min-h-screen lg:rounded-xl my-5"
+        className="hero lg:rounded-xl my-5"
         style={{
           backgroundImage: ` url(${filterService.image_url})`,
         }}
       >
-        <div className="hero-overlay bg-opacity-90 lg:rounded-xl"></div>
+        <div className="hero-overlay lg:py-52 bg-opacity-90 lg:rounded-xl"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="lg:max-w-5xl">
             <div className="flex flex-col md:flex-row justify-between gap-5">
