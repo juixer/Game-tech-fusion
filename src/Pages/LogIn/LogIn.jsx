@@ -1,23 +1,26 @@
 import { Helmet } from "react-helmet-async";
-import { FaGithub, FaGoogle } from "react-icons/fa6";
+import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa6";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hook/useAuth";
 import { toast } from "react-toastify";
+import { useState } from "react";
 
 const LogIn = () => {
-  const location = useLocation()
+  const location = useLocation();
+  // show password
+  const [showPassword, setShowPassword] = useState(true);
   // use auth fuctions
   const { googleLogin, githubLogin, userLogIn } = useAuth();
 
   // navigate
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   // handle google login
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => {
         toast.success("Login successful");
-        navigate(location.state ? location?.state : '/')
+        navigate(location.state ? location?.state : "/");
       })
       .catch((err) => {
         toast.error(err.message);
@@ -28,24 +31,28 @@ const LogIn = () => {
     githubLogin()
       .then(() => {
         toast.success("Login successful");
-        navigate(location.state ? location?.state : '/')
+        navigate(location.state ? location?.state : "/");
       })
       .catch((err) => {
         toast.error(err.message);
       });
   };
   // userLOgin
-const handleUserLogin = e => {
+  const handleUserLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    userLogIn(email,password)
-    .then(()=> {
-      toast.success('Login Successful')
-      navigate(location.state ? location?.state : '/')
-    })
-    .catch(err => toast.error(err.message))
-}
+    userLogIn(email, password)
+      .then(() => {
+        toast.success("Login Successful");
+        navigate(location.state ? location?.state : "/");
+      })
+      .catch((err) => toast.error(err.message));
+  };
+  // handleshow password
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword)
+  }
 
   return (
     <div
@@ -76,13 +83,16 @@ const handleUserLogin = e => {
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Type your password"
-            className="input input-bordered"
-            required
-          />
+          <div className="flex items-center">
+            <input
+              type={showPassword ? "password" : "text"}
+              name="password"
+              placeholder="Type your password"
+              className="input w-full input-bordered"
+              required
+            />
+            <span onClick={handleShowPassword} className="-ml-8 text-xl">{showPassword? <FaEye/> : <FaEyeSlash/>}</span>
+          </div>
         </div>
         <div className="form-control mt-6">
           <button className="btn text-white bg-black hover:text-black">

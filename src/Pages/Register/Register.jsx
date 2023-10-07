@@ -2,10 +2,15 @@ import { Helmet } from "react-helmet-async";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../Hook/useAuth";
 import { toast } from "react-toastify";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { useState } from "react";
 
 const Register = () => {
   // navigate
   const navigate = useNavigate();
+
+  // show password
+  const [showPassword, setShowPassword] = useState(true);
 
   // useContext
   const { createUser, updateUser } = useAuth();
@@ -22,13 +27,13 @@ const Register = () => {
 
     // conditional validation
     if (password !== confirmPassword) {
-      toast.error("Password does not matched");
+      return toast.error("Password does not matched");
     } else if (password.length < 6) {
-      toast.error("Password should be at least 6 characters");
+      return toast.error("Password should be at least 6 characters");
     } else if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*[@#$%^&+=!])/.test(password)) {
-      toast.error("Password does not match the requirements");
+      return toast.error("Password does not match the requirements");
     } else if (checkbox === false) {
-      toast.error("Please accept our terms and conditions");
+      return toast.error("Please accept our terms and conditions");
     }
 
     // create user
@@ -46,6 +51,10 @@ const Register = () => {
       .then((err) => {
         toast.error(err.message);
       });
+  };
+  // handle show password
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
   };
   return (
     <div
@@ -100,13 +109,18 @@ const Register = () => {
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Type your password"
-            className="input input-bordered"
-            required
-          />
+          <div className="flex items-center">
+            <input
+              type={showPassword ? "password" : "text"}
+              name="password"
+              placeholder="Type your password"
+              className="input w-full input-bordered"
+              required
+            />
+            <span onClick={handleShowPassword} className="-ml-8 text-xl">
+              {showPassword ? <FaEye /> : <FaEyeSlash />}
+            </span>
+          </div>
           <ul className="text-red-500 list-disc ml-8 my-3">
             <li>Password should be at least 6 characters</li>
             <li>Contains at least one capital letter</li>
@@ -117,13 +131,18 @@ const Register = () => {
           <label className="label">
             <span className="label-text">Confirm Password</span>
           </label>
-          <input
-            type="password"
-            name="confirmPassword"
-            placeholder="Confirm your password"
-            className="input input-bordered"
-            required
-          />
+          <div className="flex items-center">
+            <input
+              type={showPassword ? "password" : "text"}
+              name="confirmPassword"
+              placeholder="Confirm your password"
+              className="w-full input input-bordered"
+              required
+            />
+            <span onClick={handleShowPassword} className="-ml-8 text-xl">
+              {showPassword ? <FaEye /> : <FaEyeSlash />}
+            </span>
+          </div>
         </div>
 
         <div className="flex items-center gap-5 mt-5">
