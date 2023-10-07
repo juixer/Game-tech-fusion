@@ -29,5 +29,7 @@
 
 - in register and login page if error happens then a toast alert pop up, same goes for if everything goes correct way toast alert pop up.
 
-- Its all device frindly responsive.
+-  extra 2 section i added customer reviews section and FAQ section in home page.
+
+- Its all device friendly responsive.
 
