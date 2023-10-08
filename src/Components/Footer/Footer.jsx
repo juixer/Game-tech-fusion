@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
+import useAuth from "../../Hook/useAuth";
 
 const Footer = () => {
+  const { user } = useAuth();
   return (
-    <footer
-      className="footer footer-center p-10 text-white bg-black"
-    >
+    <footer className="footer footer-center p-10 text-white bg-black">
       <nav className="grid grid-flow-col gap-4">
-        <Link to={"/blog"}>
-          <p className="link link-hover">Blog</p>
-        </Link>
+        {user ? (
+          <>
+            <Link to={"/blog"}>Blogs</Link>
+            <Link to={"/editProfile"}>Edit Profile</Link>
+          </>
+        ) : (
+          ""
+        )}
         <Link to={"/about"}>
           <p className="link link-hover">About us</p>
         </Link>
