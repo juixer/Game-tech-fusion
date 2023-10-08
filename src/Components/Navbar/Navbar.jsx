@@ -19,9 +19,14 @@ const Navbar = () => {
         <NavLink to={"/"}>Home</NavLink>
       </li>
 
-      <li>
-        <NavLink to={"/blog"}>Blog</NavLink>
+      {
+        user ? <><li>
+        <NavLink to={"/blog"}>Blogs</NavLink>
       </li>
+      <li>
+        <NavLink to={'/editProfile'}>Edit Profile</NavLink>
+      </li></> : ''
+      }
 
       <li>
         <NavLink to={"/about"}>About Us</NavLink>
@@ -87,13 +92,8 @@ const Navbar = () => {
             >
               <h1 className="text-center font-bold">{user?.displayName}</h1>
               <hr></hr>
-              <li className="mt-2">
-                <Link to={"/editProfile"}>
-                  <p>Edit Profile</p>
-                </Link>
-              </li>
               <li>
-                <a onClick={handleLogOut}>Logout</a>
+                <a className="flex mt-2 justify-center" onClick={handleLogOut}>Logout</a>
               </li>
             </ul>
           </div>
