@@ -31,5 +31,7 @@
 
 -  extra 2 section i added customer reviews section and FAQ section in home page.
 
+-  added 2 private route in navbar i will display if user logged in. if not log in i will not show on navbar
+
 - Its all device friendly responsive.
 
